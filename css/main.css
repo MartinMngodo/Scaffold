@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", "Helvetica Neue", sans-serif !important;
+  background-color: #ffffff;
+}
+
+.auth-section {
+  min-height: 100vh;
+}
+.auth-section .auth-content {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth-section .auth-content .form {
+  min-width: 480px;
+  padding: 24px;
+  background-color: #fff;
+}
+@media screen and (max-width: 580px) {
+  .auth-section .auth-content .form {
+    min-width: 360px;
+  }
+}
+
+.auth-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/minimal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=main.css.map */
